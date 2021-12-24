@@ -18,6 +18,16 @@
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a09b7eec8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body,
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="">
     <header class="bg-red-500">
@@ -26,22 +36,49 @@
           <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
             Welcome to Hayley's Daycare
           </h1>
-          <h2 class="text-3xl text-white">
+          <h2 class="text-3xl text-white mb-6">
             Serving Muskegon children for over 25 years
           </h2>
+          <a
+            href="#learn"
+            class="
+              px-5
+              py-3
+              mr-4
+              text-xl text-white
+              bg-blue-500
+              rounded-md
+              hover:bg-blue-600
+            "
+          >
+            Learn More
+          </a>
+          <a
+            href="#apply"
+            class="
+              px-5
+              py-3
+              text-xl text-white
+              rounded-md
+              bg-green-400
+              hover:bg-green-500
+            "
+          >
+            Apply Now
+          </a>
         </div>
       </div>
     </header>
-    <section class="bg-grey-300">
-      <div class="container mx-auto md:p-12">
-        <h2 class="mb-20 text-center text-5xl text-black">
-          What Haley's Daycare Offers
-        </h2>
+    <section id="learn" class="bg-grey-300 text-gray-800">
+      <div class="container mx-auto md:p-12 py-12">
+        <h2 class="mb-10 text-center text-5xl">What Haley's Daycare Offers</h2>
         <div
           class="grid lg:mb-24 mb-10 md:px-10 lg:grid-cols-3 xl:gap-20 gap-10"
         >
           <div class="md:text-center text-xl">
-            <h3 class="text-2xl mb-5 font-bold">State Licensed</h3>
+            <h3 class="text-2xl mb-5 font-bold md:text-left text-center">
+              State Licensed
+            </h3>
             <img
               src="img/calvin.jpg"
               class="object-cover mx-auto object-top h-48 lg:w-full w-3/5 mb-5"
@@ -55,7 +92,9 @@
             </p>
           </div>
           <div class="md:text-center text-xl">
-            <h3 class="text-2xl mb-5 font-bold">Full & Part Time</h3>
+            <h3 class="text-2xl mb-5 font-bold md:text-left text-center">
+              Full & Part Time
+            </h3>
             <img
               src="img/calvin.jpg"
               class="object-cover mx-auto object-top h-48 lg:w-full w-3/5 mb-5"
@@ -69,7 +108,9 @@
             </p>
           </div>
           <div class="md:text-center text-xl">
-            <h3 class="text-2xl mb-5 font-bold">6 months and Up</h3>
+            <h3 class="text-2xl mb-5 font-bold md:text-left text-center">
+              6 months and Up
+            </h3>
             <img
               src="img/calvin.jpg"
               class="object-cover mx-auto object-top h-48 lg:w-full w-3/5 mb-5"
@@ -89,17 +130,17 @@
       <div
         class="
           lg:p-36
-          p-16
+          p-10
           bg-blue-500
           flex flex-col
           items-start
           justify-center
         "
       >
-        <h3 class="text-4xl text-white mb-6">
-          There's Always Something Fun Happening!
+        <h3 class="text-5xl text-gray-100 mb-6">
+          There's <b>Always Something Fun</b> Happening!
         </h3>
-        <ul class="text-white text-2xl list-disc pl-10">
+        <ul class="text-white text-3xl list-disc pl-10">
           <li>Outdoor Playground Equipment</li>
           <li>Arts & Crafts</li>
           <li>Relationiship Building</li>
@@ -109,7 +150,8 @@
           <li>So Much More!</li>
         </ul>
       </div>
-      <div class="p-36">
+      <div class="md:p-36 p-10">
+        <h3 class="text-grey-800 text-5xl text-center mb-5">Our Facility</h3>
         <div
           id="img-carousel"
           data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'
@@ -132,10 +174,60 @@
         </div>
       </div>
     </section>
-    <section class="grid md:grid-cols-2 grid-cols-1">
-      <div class="p-36">Sign up today!</div>
-      <div class="p-36 bg-yellow-200">Sign up today!</div>
+    <section id="apply" class="grid md:grid-cols-2 grid-cols-1">
+      <div class="p-12">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdweJAPGfRaAAChAAR-2VpkqYu9zxotx9MY5HWxZX1FRU6S-A/viewform?embedded=true"
+          width="100%"
+          height="640"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
+      </div>
+      <div
+        class="
+          md:p-36
+          py-10
+          px-10
+          bg-yellow-200
+          text-gray-800
+          flex flex-col
+          justify-center
+          items-center
+        "
+      >
+        <h3 class="text-5xl text-center mb-8">
+          Have Questions?<br /><b>Get Ahold of Us</b>
+        </h3>
+
+        <ul class="text-2xl md:text-left text-center">
+          <li class="mb-2">
+            <a href=""
+              ><i class="mr-4 fas fa-map-marker-alt"></i>3696 Kern Rd. Muskegon,
+              MI 49445</a
+            >
+          </li>
+          <li class="mb-2">
+            <a href="tel:231798">
+              <i class="mr-3 fas fa-phone-alt"></i>(231) 798-5579
+            </a>
+          </li>
+
+          <li class="mb-2">
+            <a href="mailto:hayley.gouine@gmail.com"
+              ><i class="mr-3 fas fa-envelope"></i>hayley.gouine@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
+    <footer class="bg-green-500 py-5 flex items-center justify-center">
+      <p class="text-white text-sm">
+        Website by <a href="https://bdweb.solutions">BD Web Solutions</a>
+      </p>
+    </footer>
     <script src="main.js"></script>
     <script src="" async defer></script>
   </body>
