@@ -6,7 +6,17 @@
     <title>Hayley's Daycare</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="dist/main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="">
@@ -76,11 +86,20 @@
       </div>
     </section>
     <section class="grid md:grid-cols-2 grid-cols-1">
-      <div class="lg:p-36 p-16 bg-blue-500">
-        <h3 class="text-2xl text-white mb-4">
+      <div
+        class="
+          lg:p-36
+          p-16
+          bg-blue-500
+          flex flex-col
+          items-start
+          justify-center
+        "
+      >
+        <h3 class="text-4xl text-white mb-6">
           There's Always Something Fun Happening!
         </h3>
-        <ul class="text-white list-disc">
+        <ul class="text-white text-2xl list-disc pl-10">
           <li>Outdoor Playground Equipment</li>
           <li>Arts & Crafts</li>
           <li>Relationiship Building</li>
@@ -90,15 +109,34 @@
           <li>So Much More!</li>
         </ul>
       </div>
-      <div class="p-36 flex items-center justify-center">
-        <img src="img/calvin.jpg" class="" alt="" /><img
-          src="img/calvin.jpg"
-          class=""
-          alt=""
-        /><img src="img/calvin.jpg" class="" alt="" />
+      <div class="p-36">
+        <div
+          id="img-carousel"
+          data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true}'
+        >
+          <img
+            class="object-cover object-top w-96 h-96"
+            src="img/calvin.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover object-top w-96 h-96"
+            src="img/calvin.jpg"
+            alt=""
+          />
+          <img
+            class="object-cover object-top w-96 h-96"
+            src="img/calvin.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
-
+    <section class="grid md:grid-cols-2 grid-cols-1">
+      <div class="p-36">Sign up today!</div>
+      <div class="p-36 bg-yellow-200">Sign up today!</div>
+    </section>
+    <script src="dist/main.js"></script>
     <script src="" async defer></script>
   </body>
 </html>
